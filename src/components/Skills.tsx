@@ -1,16 +1,45 @@
 import { SectionHeading } from "./SectionHeading";
 import { Reveal } from "./Reveal";
-import { Code2, Wrench, Users } from "lucide-react";
+import { Code2, Wrench, Users, Brain, BarChart3, Heart } from "lucide-react";
 
-const technical = [
-  "PLC (Omron, Ladder Diagram)",
-  "Arduino & ESP32",
-  "MQTT (HiveMQ)",
-  "IoT Systems",
-  "HTML, CSS, JavaScript",
+const automation = [
+  "PLC Programming (Ladder Diagram)",
+  "Basic SCADA Concepts",
+  "Control & Electrical Troubleshooting",
+  "Pneumatic & Electro-Pneumatic",
+  "P&ID Analysis",
 ];
-const tools = ["Fluidsim", "CX-Programmer", "Arduino IDE", "Canva"];
-const soft = ["Leadership", "Communication", "Problem Solving", "Teamwork"];
+const programming = [
+  "C Programming (Basic)",
+  "Python Programming (Basic)",
+  "Arduino & STM32 (Intermediate)",
+];
+const tools = [
+  "Proteus, PSIM",
+  "MATLAB / Simulink",
+  "EcoStruxure, CX-Programmer",
+  "SolidWorks",
+  "Microsoft Office & Google Workspace",
+];
+
+const analytical = [
+  "Logical & systematic thinking",
+  "Data-driven decision making",
+  "Root-cause troubleshooting",
+  "Breaking complex problems into steps",
+];
+const emotional = [
+  "Empathy & active listening",
+  "Self-awareness under pressure",
+  "Mentoring & teaching mindset",
+  "Calm conflict resolution",
+];
+const management = [
+  "Leadership (Chair Executive — VOMIFEST)",
+  "Cross-team coordination",
+  "Time & priority management",
+  "Public speaking & MC",
+];
 
 const Card = ({
   icon: Icon,
@@ -23,7 +52,7 @@ const Card = ({
   items: string[];
   rotate: string;
 }) => (
-  <div className={`paper-card p-7 ${rotate} hover:rotate-0 transition-transform duration-500`}>
+  <div className={`paper-card p-7 ${rotate} hover:rotate-0 transition-transform duration-500 h-full`}>
     <span className="tape tape-tl" />
     <div className="flex items-center gap-3 mb-5">
       <div className="w-10 h-10 grid place-items-center bg-red-deep text-paper">
@@ -46,15 +75,30 @@ export const Skills = () => (
   <section id="skills" className="px-6 py-24">
     <div className="max-w-6xl mx-auto">
       <SectionHeading eyebrow="02 · Toolkit" title="What I bring" accent="to the bench" />
-      <div className="grid md:grid-cols-3 gap-8">
+
+      <h3 className="font-display text-3xl text-brown -rotate-1 mb-6">— Hard skills</h3>
+      <div className="grid md:grid-cols-3 gap-8 mb-16">
         <Reveal variant="up" delay={0}>
-          <Card icon={Code2} title="Technical" items={technical} rotate="-rotate-1" />
+          <Card icon={Code2} title="Automation & Control" items={automation} rotate="-rotate-1" />
         </Reveal>
         <Reveal variant="up" delay={120}>
-          <Card icon={Wrench} title="Tools" items={tools} rotate="rotate-1" />
+          <Card icon={Wrench} title="Programming & Embedded" items={programming} rotate="rotate-1" />
         </Reveal>
         <Reveal variant="up" delay={240}>
-          <Card icon={Users} title="Soft Skills" items={soft} rotate="-rotate-1" />
+          <Card icon={Users} title="Engineering Tools" items={tools} rotate="-rotate-1" />
+        </Reveal>
+      </div>
+
+      <h3 className="font-display text-3xl text-brown -rotate-1 mb-6">— Soft skills</h3>
+      <div className="grid md:grid-cols-3 gap-8">
+        <Reveal variant="up" delay={0}>
+          <Card icon={BarChart3} title="Analytical Thinking" items={analytical} rotate="rotate-1" />
+        </Reveal>
+        <Reveal variant="up" delay={120}>
+          <Card icon={Heart} title="Emotional Intelligence" items={emotional} rotate="-rotate-1" />
+        </Reveal>
+        <Reveal variant="up" delay={240}>
+          <Card icon={Brain} title="Leadership & Management" items={management} rotate="rotate-1" />
         </Reveal>
       </div>
     </div>

@@ -21,23 +21,24 @@ export const About = () => {
               <span className="tape tape-tl" />
               <span className="tape tape-tr" />
               <p className="text-lg text-brown leading-relaxed mb-4">
-                I'm a vocational student in <strong>Teknologi Rekayasa Otomasi</strong>, fascinated
-                by the moment electricity, code, and mechanics start working as one system.
+                I'm a 3rd-year <strong>Applied Automation Engineering Technology</strong> student
+                at Diponegoro University, with around three years of hands-on work in automation
+                and control — from PLC programming and motor control system design, to computer
+                vision and microcontroller-based IoT.
               </p>
               <p className="text-brown-soft leading-relaxed mb-4">
-                My focus areas are <em>IoT</em>, <em>PLC programming</em>, and{" "}
-                <em>industrial automation</em>. I love bridging the gap between sensors in the field
-                and dashboards on the screen — especially for use cases that matter to people:
-                farmers, small workshops, and local industries.
+                I believe <em>persistence, consistency, and deep focus</em> are what truly turn a
+                student into an engineer. I approach every technical challenge with a goal-oriented,
+                problem-solving mindset — breaking complex problems into structured steps, then
+                solving them systematically.
               </p>
               <p className="text-brown-soft leading-relaxed">
-                I'm now actively looking for an internship where I can contribute to real
-                automation problems, learn from senior engineers, and ship things that work in the
-                physical world.
+                Currently I serve as a PLC Practicum Assistant at UNDIP and am actively looking for
+                an internship in industrial automation, control systems, and embedded engineering.
               </p>
 
               <p className="font-display text-3xl text-red-deep mt-6 -rotate-1">
-                "Make it work. Then make it kind." ✿
+                "Engineer the system. Iterate the mindset." ✿
               </p>
             </div>
           </Reveal>

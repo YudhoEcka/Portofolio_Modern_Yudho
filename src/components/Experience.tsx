@@ -4,31 +4,78 @@ import { Calendar } from "lucide-react";
 
 const items = [
   {
-    org: "VOMIFEST — Vocational Festival",
-    role: "Event Leader / Project Manager",
-    period: "2025",
+    org: "Diponegoro University",
+    role: "PLC Practicum Assistant",
+    period: "Feb 2026 – Present",
     bullets: [
-      "Led a team of 30+ committee members across 5 divisions to deliver a campus-wide festival.",
-      "Managed end-to-end timeline, sponsorship outreach, and on-site coordination.",
-      "Festival reached 1,200+ attendees with zero major incidents.",
+      "Manage attendance and prepare practical modules and software for PLC sessions.",
+      "Conduct lessons and hands-on practicum sessions on Programmable Logic Controllers.",
+      "Evaluate student performance and final reports.",
     ],
   },
   {
-    org: "HIMATRO — Automation Engineering Student Association",
-    role: "Member, Tech & Education Division",
-    period: "2024 — Present",
+    org: "Vocational Muslim Festival (VOMIFEST)",
+    role: "Chair Executive",
+    period: "November 2025",
     bullets: [
-      "Organized PLC and Arduino workshops for first-year students.",
-      "Built internal documentation for lab equipment usage.",
+      "Led and coordinated all divisions (event, logistics, sponsorship, media, security).",
+      "Managed planning, execution, and evaluation of the main event (Tabligh Akbar).",
+      "Developed leadership, decision-making, and problem-solving under high pressure.",
     ],
   },
   {
-    org: "IRMABA — Campus Spiritual Organization",
-    role: "Active Member",
-    period: "2023 — Present",
+    org: "HMTRA — Advokesma",
+    role: "Head of Scholarship & Career Division",
+    period: "May 2025 – Jan 2026",
     bullets: [
-      "Coordinated community events and volunteer initiatives.",
-      "Strengthened cross-major collaboration on campus programs.",
+      "Led the Scholarship and Career Division under Student Advocacy and Welfare.",
+      "Managed internship, scholarship, and career development programs for students.",
+      "Organized and disseminated career-related information across the department.",
+    ],
+  },
+  {
+    org: "FKMI SV UNDIP",
+    role: "Staff of Islamic Center Department",
+    period: "Jan 2025 – Dec 2025",
+    bullets: [
+      "Planned and executed Islamic-based student development programs at the Vocational School.",
+      "Collaborated cross-team to ensure effective program implementation.",
+    ],
+  },
+  {
+    org: "HMTRA — Advokesma",
+    role: "Staff of Scholarship & Career Division",
+    period: "May 2024 – Mar 2025",
+    bullets: [
+      "Helped manage student aspirations and academic-related issues.",
+      "Distributed internship and scholarship information to students.",
+    ],
+  },
+  {
+    org: "LDK INSANI UNDIP",
+    role: "Staff of Syiar Division",
+    period: "Jan 2024 – Dec 2024",
+    bullets: [
+      "Supported planning and execution of Islamic outreach programs.",
+      "Coordinated with internal teams to ensure effective implementation.",
+    ],
+  },
+  {
+    org: "Baitussalam Mosque",
+    role: "Qur'an Tahfidz Teacher",
+    period: "Nov 2023 – Present",
+    bullets: [
+      "Developed structured teaching methods based on student level.",
+      "Improved communication, mentoring, and leadership skills.",
+    ],
+  },
+  {
+    org: "TikTok",
+    role: "Affiliate Marketer & Content Creator",
+    period: "Jul 2023 – Jul 2024",
+    bullets: [
+      "Created and optimized digital content for affiliate marketing.",
+      "Developed data-informed communication and growth strategies.",
     ],
   },
 ];
@@ -41,13 +88,14 @@ export const Experience = () => (
         <div className="absolute left-4 md:left-1/2 top-0 bottom-0 w-px bg-brown/30 -translate-x-1/2" />
         <div className="space-y-12">
           {items.map((it, i) => (
-            <Reveal key={it.org} variant={i % 2 ? "right" : "left"}>
+            <Reveal key={it.org + it.period} variant={i % 2 ? "right" : "left"}>
               <div
                 className={`relative md:w-1/2 ${
                   i % 2 ? "md:ml-auto md:pl-12" : "md:pr-12"
                 } pl-12 md:pl-0`}
               >
-                <span className="absolute left-4 md:left-auto md:right-auto top-3 w-3 h-3 bg-red-deep rounded-full -translate-x-1/2 md:translate-x-0"
+                <span
+                  className="absolute left-4 md:left-auto md:right-auto top-3 w-3 h-3 bg-red-deep rounded-full -translate-x-1/2 md:translate-x-0"
                   style={i % 2 ? { left: "-1.5rem" } : { right: "-1.5rem", left: "auto" }}
                 />
                 <div className="paper-card p-6">
