@@ -1,6 +1,6 @@
 import { SectionHeading } from "./SectionHeading";
 import { Reveal } from "./Reveal";
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink, Youtube } from "lucide-react";
 import iotImg from "@/assets/project-iot.jpg";
 import plcImg from "@/assets/project-plc.jpg";
 import arduinoImg from "@/assets/project-arduino.jpg";
@@ -8,41 +8,47 @@ import arduinoImg from "@/assets/project-arduino.jpg";
 const projects = [
   {
     n: "01",
-    title: "Smart Greenhouse Monitor",
+    title: "IoT Smart Water Heater Mini-Plant",
     img: iotImg,
-    desc: "An ESP32-based system that streams soil moisture, temperature, and humidity via MQTT to a HiveMQ broker, with a lightweight web dashboard for farmers.",
-    tech: ["ESP32", "MQTT", "HiveMQ", "DHT22", "Web Dashboard"],
+    desc: "IoT-based smart water heater control system with full 3D mechanical design in SolidWorks, complete electrical schematics, and ESP32 as the main controller.",
+    tech: ["ESP32", "SolidWorks", "SSR", "Temp & Flow Sensors", "OLED"],
     features: [
-      "Real-time telemetry over MQTT QoS 1",
-      "Auto-irrigation trigger via relay control",
-      "Mobile-friendly dashboard with live charts",
+      "3D mechanical assembly designed in SolidWorks",
+      "ESP32 + SSR + temperature & flow sensor integration",
+      "Real-time sensor-based automatic control",
+      "Live data display via OLED",
     ],
+    period: "21 April – 02 June 2025",
     rotate: "-rotate-2",
   },
   {
     n: "02",
-    title: "Automated Car Wash Line",
+    title: "Computer Vision — Image Processing & Object Detection",
     img: plcImg,
-    desc: "An Omron PLC controlled car wash sequence built in CX-Programmer, simulating sensors, conveyor, foam, rinse, and dry stages with safety interlocks.",
-    tech: ["Omron PLC", "Ladder Diagram", "CX-Programmer", "Pneumatics"],
+    desc: "Learning series and implementations covering image processing, object detection, feature matching, model fitting, ball tracking, and panorama image stitching using Python & OpenCV.",
+    tech: ["Python", "OpenCV", "Machine Learning", "GUI"],
     features: [
-      "Sequential ladder logic with state retention",
-      "Emergency stop & safety interlocks",
-      "Indicator HMI for each cycle stage",
+      "Image formation & geometric transformation",
+      "Full image processing pipeline with OpenCV",
+      "Feature detection & matching",
+      "Ball tracking system & auto-panorama GUI",
     ],
+    period: "Feb 2026 – Present",
     rotate: "rotate-2",
   },
   {
     n: "03",
-    title: "Servo-Controlled Sorting Arm",
+    title: "Electric Drive Systems — DC, BLDC & Inverter",
     img: arduinoImg,
-    desc: "An Arduino + servo project that sorts colored objects using a TCS3200 sensor and a 3-axis servo arm, prototyped on breadboard for educational demos.",
-    tech: ["Arduino Uno", "Servo SG90", "TCS3200", "Arduino IDE"],
+    desc: "Deep exploration of electric motor control: DC & AC motor control, BLDC with Six-Step and Space Vector commutation, sinewave inverter, and PWM analysis using Arduino, ESP32, and MATLAB/Simulink.",
+    tech: ["Arduino", "ESP32", "MATLAB", "Simulink", "VFD AT4"],
     features: [
-      "Color detection with calibration routine",
-      "Smooth servo motion via easing functions",
-      "Serial debug & teach-mode positions",
+      "BLDC control — Six Step, Sinewave, Space Vector",
+      "Dynamic system modeling with MATLAB & Simulink",
+      "3-phase AC motor control via VFD AT4",
+      "PWM analysis & inverter design",
     ],
+    period: "2024 – 2025",
     rotate: "-rotate-1",
   },
 ];
@@ -78,7 +84,8 @@ export const Projects = () => (
             <Reveal variant={i % 2 ? "left" : "right"} className="md:col-span-7" delay={120}>
               <div>
                 <span className="font-display text-6xl text-red-clay/40 leading-none">{p.n}</span>
-                <h3 className="font-serif text-3xl md:text-4xl text-ink mt-1 mb-4">{p.title}</h3>
+                <h3 className="font-serif text-3xl md:text-4xl text-ink mt-1 mb-1">{p.title}</h3>
+                <p className="mono text-xs uppercase tracking-widest text-red-deep mb-4">{p.period}</p>
                 <p className="text-brown-soft leading-relaxed mb-5">{p.desc}</p>
 
                 <div className="mb-5">
@@ -107,12 +114,12 @@ export const Projects = () => (
                   </ul>
                 </div>
 
-                <div className="flex gap-3">
+                <div className="flex gap-4">
                   <a href="#" className="inline-flex items-center gap-2 text-sm text-brown hover:text-red-deep">
-                    <Github className="w-4 h-4" /> Source
+                    <Youtube className="w-4 h-4" /> YouTube
                   </a>
                   <a href="#" className="inline-flex items-center gap-2 text-sm text-brown hover:text-red-deep">
-                    <ExternalLink className="w-4 h-4" /> Demo
+                    <ExternalLink className="w-4 h-4" /> Details
                   </a>
                 </div>
               </div>

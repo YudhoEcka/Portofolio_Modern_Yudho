@@ -3,11 +3,11 @@ import { Reveal } from "./Reveal";
 import { Compass, PenTool, Code, FlaskConical, Rocket } from "lucide-react";
 
 const steps = [
-  { icon: Compass, t: "Planning", d: "Understand the real problem, talk to users, scope the system." },
-  { icon: PenTool, t: "Design", d: "Sketch wiring, PLC logic, and data flow before writing code." },
-  { icon: Code, t: "Development", d: "Build in small testable units — firmware, ladder, dashboard." },
-  { icon: FlaskConical, t: "Testing", d: "Bench tests, edge cases, and field validation." },
-  { icon: Rocket, t: "Deployment", d: "Document, hand-off, and monitor in production." },
+  { icon: Compass, t: "Understand", d: "Break the real problem into clear, structured sub-problems." },
+  { icon: PenTool, t: "Design", d: "Sketch wiring, PLC ladder, and data flow before writing code." },
+  { icon: Code, t: "Build", d: "Iterate in small testable units — firmware, ladder, dashboard." },
+  { icon: FlaskConical, t: "Test", d: "Bench tests, edge cases, and field validation." },
+  { icon: Rocket, t: "Deliver", d: "Document, hand-off, and keep learning from every iteration." },
 ];
 
 export const Process = () => (

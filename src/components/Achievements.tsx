@@ -1,18 +1,20 @@
 import { SectionHeading } from "./SectionHeading";
 import { Reveal } from "./Reveal";
-import { Award, Trophy, Medal, Star } from "lucide-react";
+import { Award, Trophy, Medal, Star, BookOpen, Users } from "lucide-react";
 
 const list = [
-  { y: "2025", icon: Trophy, t: "Finalist — National Automation Challenge", d: "Top 10 of 80+ teams for an IoT-based smart greenhouse prototype." },
-  { y: "2025", icon: Medal, t: "Best Project Leader — VOMIFEST", d: "Recognized for organizing a 1,200+ attendee vocational festival." },
-  { y: "2024", icon: Award, t: "Certified PLC Operator — Omron Track", d: "Completed CX-Programmer certification with distinction." },
-  { y: "2024", icon: Star, t: "Outstanding Student — Automation Dept.", d: "Top 5% academic performance in the cohort." },
+  { y: "2026", icon: Star, t: "GPA 3.87 / 4.0 — UNDIP", d: "Cumulative GPA across 105 SKS in Applied Automation Engineering Technology." },
+  { y: "2026", icon: Trophy, t: "PLC Practicum Assistant", d: "Selected as practicum assistant for Programmable Logic Controller course at Diponegoro University." },
+  { y: "2025", icon: Medal, t: "Chair Executive — VOMIFEST", d: "Led the Vocational Muslim Festival as Chair Executive across event, logistics, sponsorship, media and security divisions." },
+  { y: "2024", icon: Award, t: "4th Place — Essay Competition", d: "Al Bahrain Islamic Fair 2024, Semarang." },
+  { y: "2024", icon: BookOpen, t: "Public Speaking for Dakwah Training", d: "TPC Training Center Semarang." },
+  { y: "2023", icon: Users, t: "Leadership Training & LKMM-PD", d: "Foundational student leadership and management training (HMTRA)." },
 ];
 
 export const Achievements = () => (
   <section id="achievements" className="px-6 py-24">
     <div className="max-w-6xl mx-auto">
-      <SectionHeading eyebrow="06 · Recognition" title="Achievements &" accent="awards" />
+      <SectionHeading eyebrow="06 · Recognition" title="Achievements &" accent="training" />
       <div className="grid md:grid-cols-2 gap-6">
         {list.map((a, i) => (
           <Reveal key={a.t} variant={i % 2 ? "right" : "left"} delay={i * 80}>

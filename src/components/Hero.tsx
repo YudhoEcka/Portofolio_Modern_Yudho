@@ -64,7 +64,7 @@ export const Hero = () => {
                 <span>Open to internships</span>
               </div>
               <span className="hidden sm:inline">·</span>
-              <span className="hidden sm:inline">Bandar Lampung, Indonesia</span>
+              <span className="hidden sm:inline">Tembalang, Semarang, Indonesia</span>
             </div>
           </Reveal>
         </div>

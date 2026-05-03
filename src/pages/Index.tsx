@@ -8,7 +8,6 @@ import { NotableProjects } from "@/components/NotableProjects";
 import { Achievements } from "@/components/Achievements";
 import { Testimonials } from "@/components/Testimonials";
 import { Process } from "@/components/Process";
-import { Upcoming } from "@/components/Upcoming";
 import { Contact } from "@/components/Contact";
 
 const Index = () => {
@@ -24,7 +23,6 @@ const Index = () => {
       <Achievements />
       <Testimonials />
       <Process />
-      <Upcoming />
       <Contact />
     </main>
   );
