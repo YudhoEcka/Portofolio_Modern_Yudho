@@ -37,7 +37,7 @@ export const About = () => {
               </p>
 
               <p className="font-display text-3xl text-red-deep mt-6 -rotate-1">
-                "Make it work. Then make it kind." ✿
+                "Engineer the system. Iterate the mindset." ✿
               </p>
             </div>
           </Reveal>
