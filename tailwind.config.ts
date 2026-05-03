@@ -13,12 +13,32 @@ export default {
       },
     },
     extend: {
+      fontFamily: {
+        display: ["var(--font-display)"],
+        serif: ["var(--font-serif)"],
+        body: ["var(--font-body)"],
+        mono: ["var(--font-mono)"],
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
         ring: "hsl(var(--ring))",
         background: "hsl(var(--background))",
         foreground: "hsl(var(--foreground))",
+        cream: "hsl(var(--cream))",
+        "cream-deep": "hsl(var(--cream-deep))",
+        paper: "hsl(var(--paper))",
+        brown: {
+          DEFAULT: "hsl(var(--brown))",
+          soft: "hsl(var(--brown-soft))",
+          light: "hsl(var(--brown-light))",
+        },
+        red: {
+          soft: "hsl(var(--red-soft))",
+          deep: "hsl(var(--red-deep))",
+          clay: "hsl(var(--red-clay))",
+        },
+        ink: "hsl(var(--ink))",
         primary: {
           DEFAULT: "hsl(var(--primary))",
           foreground: "hsl(var(--primary-foreground))",
