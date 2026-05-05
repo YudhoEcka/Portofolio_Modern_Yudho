@@ -24,7 +24,7 @@ const items = [
     ],
   },
   {
-    org: "HMTRA — Advokesma",
+    org: "HIMATRO — Advokesma",
     role: "Head of Scholarship & Career Division",
     period: "May 2025 – Jan 2026",
     bullets: [
@@ -43,7 +43,7 @@ const items = [
     ],
   },
   {
-    org: "HMTRA — Advokesma",
+    org: "HIMATRO — Advokesma",
     role: "Staff of Scholarship & Career Division",
     period: "May 2024 – Mar 2025",
     bullets: [
