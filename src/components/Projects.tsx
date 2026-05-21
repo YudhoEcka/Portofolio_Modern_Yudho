@@ -3,7 +3,6 @@ import { Reveal } from "./Reveal";
 import { ExternalLink, Youtube } from "lucide-react";
 import iotImg from "@/assets/project-iot.jpg";
 import plcImg from "@/assets/project-plc.jpg";
-import arduinoImg from "@/assets/project-arduino.jpg";
 
 const projects = [
   {
@@ -36,21 +35,7 @@ const projects = [
     period: "Feb 2026 – Present",
     rotate: "rotate-2",
   },
-  {
-    n: "03",
-    title: "Electric Drive Systems — DC, BLDC & Inverter",
-    img: arduinoImg,
-    desc: "Deep exploration of electric motor control: DC & AC motor control, BLDC with Six-Step and Space Vector commutation, sinewave inverter, and PWM analysis using Arduino, ESP32, and MATLAB/Simulink.",
-    tech: ["Arduino", "ESP32", "MATLAB", "Simulink", "VFD AT4"],
-    features: [
-      "BLDC control — Six Step, Sinewave, Space Vector",
-      "Dynamic system modeling with MATLAB & Simulink",
-      "3-phase AC motor control via VFD AT4",
-      "PWM analysis & inverter design",
-    ],
-    period: "2024 – 2025",
-    rotate: "-rotate-1",
-  },
+
 ];
 
 export const Projects = () => (
