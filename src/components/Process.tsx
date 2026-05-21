@@ -1,13 +1,13 @@
 import { SectionHeading } from "./SectionHeading";
 import { Reveal } from "./Reveal";
-import { Compass, PenTool, Code, FlaskConical, Rocket } from "lucide-react";
+import { BookOpen, Wrench, GraduationCap, Users, TrendingUp } from "lucide-react";
 
 const steps = [
-  { icon: Compass, t: "Understand", d: "Break the real problem into clear, structured sub-problems." },
-  { icon: PenTool, t: "Design", d: "Sketch wiring, PLC ladder, and data flow before writing code." },
-  { icon: Code, t: "Build", d: "Iterate in small testable units — firmware, ladder, dashboard." },
-  { icon: FlaskConical, t: "Test", d: "Bench tests, edge cases, and field validation." },
-  { icon: Rocket, t: "Deliver", d: "Document, hand-off, and keep learning from every iteration." },
+  { icon: BookOpen, t: "Learning & Understanding", d: "Absorb fundamentals deeply — theory, datasheets, and first-principles thinking." },
+  { icon: Wrench, t: "Practicing Knowledge", d: "Turn ideas into working prototypes — bench tests, code, and hands-on iteration." },
+  { icon: GraduationCap, t: "Teaching Others", d: "Mentor peers and assist practicums — teaching cements true understanding." },
+  { icon: Users, t: "Collaborating & Innovating", d: "Build with teams across divisions, blending perspectives into better systems." },
+  { icon: TrendingUp, t: "Continuous Improvement", d: "Reflect, refine, and grow — every iteration sharpens the engineer's mindset." },
 ];
 
 export const Process = () => (

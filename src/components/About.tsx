@@ -1,13 +1,17 @@
 import { SectionHeading } from "./SectionHeading";
 import { Reveal } from "./Reveal";
-import { Cpu, Leaf, Lightbulb, Wrench } from "lucide-react";
+import { Users, Heart, ClipboardList, Brain, Lightbulb, MessageSquare, Target, Search } from "lucide-react";
 
 export const About = () => {
   const facts = [
-    { icon: Cpu, label: "Automation Engineering", sub: "Vocational student" },
-    { icon: Wrench, label: "Hands-on Builder", sub: "PLC · IoT · Embedded" },
-    { icon: Leaf, label: "Smart Agriculture", sub: "Tech for impact" },
-    { icon: Lightbulb, label: "Curious Mind", sub: "Always experimenting" },
+    { icon: Users, label: "Teamwork", sub: "Cross-team collaboration" },
+    { icon: Heart, label: "Emotional Intelligence", sub: "Empathy & self-awareness" },
+    { icon: ClipboardList, label: "Project Management", sub: "Plan · Execute · Evaluate" },
+    { icon: Brain, label: "Problem Solving", sub: "Structured debugging" },
+    { icon: Search, label: "Analytical Thinking", sub: "Data-driven decisions" },
+    { icon: MessageSquare, label: "Communication", sub: "Clear & concise" },
+    { icon: Lightbulb, label: "Creativity", sub: "Fresh engineering ideas" },
+    { icon: Target, label: "Focus on Goals", sub: "Purpose-driven mindset" },
   ];
 
   return (

@@ -8,7 +8,7 @@ const list = [
   { y: "2025", icon: Medal, t: "Chair Executive — VOMIFEST", d: "Led the Vocational Muslim Festival as Chair Executive across event, logistics, sponsorship, media and security divisions." },
   { y: "2024", icon: Award, t: "4th Place — Essay Competition", d: "Al Bahrain Islamic Fair 2024, Semarang." },
   { y: "2024", icon: BookOpen, t: "Public Speaking for Dakwah Training", d: "TPC Training Center Semarang." },
-  { y: "2023", icon: Users, t: "Leadership Training & LKMM-PD", d: "Foundational student leadership and management training (HMTRA)." },
+  { y: "2023", icon: Users, t: "Leadership Training & LKMM-PD", d: "Foundational student leadership and management training (HIMATRO — Himpunan Mahasiswa Teknologi Rekayasa Otomasi)." },
 ];
 
 export const Achievements = () => (
