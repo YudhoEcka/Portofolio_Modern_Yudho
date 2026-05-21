@@ -1,5 +1,5 @@
 import heroPortrait from "@/assets/hero-portrait.jpg";
-import { ArrowRight, Mail, Sparkles } from "lucide-react";
+import { ArrowRight, Mail, Sparkles, Download } from "lucide-react";
 import { Reveal } from "./Reveal";
 
 export const Hero = () => {
@@ -28,14 +28,14 @@ export const Hero = () => {
 
           <Reveal variant="left" delay={200}>
             <p className="font-display text-3xl text-brown -rotate-1 inline-block">
-              Automation Engineering Student · IoT &amp; PLC Enthusiast
+              Future Automation & Control Systems Engineer
             </p>
           </Reveal>
 
           <Reveal variant="left" delay={300}>
             <p className="text-lg text-brown-soft max-w-xl leading-relaxed">
-              <span className="underline-wavy">Building intelligent systems for real-world impact</span> —
-              from smart agriculture sensors to industrial PLC lines.
+              <span className="underline-wavy">Engineering intelligent industrial systems</span> —
+              from PLC-driven production lines and SCADA dashboards to IoT and embedded control.
             </p>
           </Reveal>
 
@@ -47,6 +47,13 @@ export const Hero = () => {
               >
                 View My Projects
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
+              </a>
+              <a
+                href="/Yudho-Ecka-Gangga-CV.pdf"
+                download
+                className="inline-flex items-center gap-2 bg-brown text-paper px-6 py-3 font-medium hover:bg-ink transition-colors shadow-[var(--shadow-paper)]"
+              >
+                <Download className="w-4 h-4" /> Download CV
               </a>
               <a
                 href="#contact"
