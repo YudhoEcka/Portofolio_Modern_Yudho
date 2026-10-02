@@ -1,4 +1,5 @@
 import heroPortrait from "@/assets/hero-portrait.jpg";
+import cvAsset from "@/assets/yudho-cv.pdf.asset.json";
 import { ArrowRight, Mail, Sparkles, Download } from "lucide-react";
 import { Reveal } from "./Reveal";
 
@@ -28,7 +29,7 @@ export const Hero = () => {
 
           <Reveal variant="left" delay={200}>
             <p className="font-display text-3xl text-brown -rotate-1 inline-block">
-              Future Automation & Control Systems Engineer
+              Process Engineering Intern · Automation Engineering Student
             </p>
           </Reveal>
 
@@ -49,7 +50,7 @@ export const Hero = () => {
                 <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
               </a>
               <a
-                href="/Yudho-Ecka-Gangga-CV.pdf"
+                href={cvAsset.url}
                 download
                 className="inline-flex items-center gap-2 bg-brown text-paper px-6 py-3 font-medium hover:bg-ink transition-colors shadow-[var(--shadow-paper)]"
               >
@@ -68,7 +69,7 @@ export const Hero = () => {
             <div className="flex items-center gap-6 pt-4 text-brown-soft text-sm">
               <div className="flex items-center gap-2">
                 <Sparkles className="w-4 h-4 text-red-clay" />
-                <span>Open to internships</span>
+                <span>Process Engineering Intern at Formulatrix</span>
               </div>
               <span className="hidden sm:inline">·</span>
               <span className="hidden sm:inline">Tembalang, Semarang, Indonesia</span>

@@ -25,21 +25,32 @@ export const About = () => {
               <span className="tape tape-tl" />
               <span className="tape tape-tr" />
               <p className="text-lg text-brown leading-relaxed mb-4">
-                I'm a 3rd-year <strong>Applied Automation Engineering Technology</strong> student
-                at Diponegoro University, with around three years of hands-on work in automation
-                and control — from PLC programming and motor control system design, to computer
-                vision and microcontroller-based IoT.
+                I’m a 7th-semester <strong>Applied Automation Engineering Technology</strong> student
+                at Diponegoro University with a strong interest in industrial automation, process
+                engineering, control systems, embedded systems, and IoT.
               </p>
               <p className="text-brown-soft leading-relaxed mb-4">
-                I believe <em>persistence, consistency, and deep focus</em> are what truly turn a
-                student into an engineer. I approach every technical challenge with a goal-oriented,
-                problem-solving mindset — breaking complex problems into structured steps, then
-                solving them systematically.
+                I enjoy learning through hands-on projects and real-world engineering environments,
+                from PLC programming and control systems to microcontrollers, computer vision, and
+                automation-related applications.
+              </p>
+              <p className="text-brown-soft leading-relaxed mb-4">
+                Currently, I am gaining professional experience as a <strong>Process Engineering Intern</strong> at
+                PT Promanufacture Indonesia (Formulatrix), Salatiga, where I am involved in the FLO I8
+                assembly and production process.
               </p>
               <p className="text-brown-soft leading-relaxed">
-                Currently I serve as a PLC Practicum Assistant at UNDIP and am actively looking for
-                an internship in industrial automation, control systems, and embedded engineering.
+                I believe that persistence, consistency, and continuous learning are essential to
+                growing from a student into a capable engineer. I approach technical challenges with
+                a structured, problem-solving mindset, breaking complex problems into practical steps
+                and continuously improving through hands-on experience.
               </p>
+
+              <div className="mt-6 pt-5 border-t border-brown/20 grid sm:grid-cols-2 gap-3 text-sm text-brown">
+                <p><strong>Degree:</strong> Bachelor of Applied Science</p>
+                <p><strong>GPA:</strong> 3.87 / 4.00</p>
+                <p className="sm:col-span-2"><strong>Study period:</strong> August 2023 – Present</p>
+              </div>
 
               <p className="font-display text-3xl text-red-deep mt-6 -rotate-1">
                 "Engineer the system. Iterate the mindset." ✿
