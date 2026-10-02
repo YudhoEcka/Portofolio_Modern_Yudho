@@ -25,8 +25,9 @@ export const Contact = () => (
           Let's <span className="font-display italic text-red-clay">collaborate</span>.
         </h2>
         <p className="text-lg text-paper/70 max-w-2xl mb-12">
-          Currently looking for internship opportunities in industrial automation, control systems,
-          IoT and embedded engineering. Drop a line — I reply within a day.
+          Currently gaining hands-on industry experience in process engineering and manufacturing at
+          PT Promanufacture Indonesia (Formulatrix). I’m always glad to connect with people working in
+          automation, control systems, embedded systems, and IoT.
         </p>
       </Reveal>
 

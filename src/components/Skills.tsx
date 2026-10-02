@@ -13,12 +13,13 @@ const programming = [
   "C Programming (Basic)",
   "Python Programming (Basic)",
   "Arduino & STM32 (Intermediate)",
+  "IoT Applications",
 ];
 const tools = [
-  "Proteus, PSIM",
-  "MATLAB / Simulink",
-  "EcoStruxure, CX-Programmer",
-  "SolidWorks",
+  "Proteus & PSIM (Intermediate)",
+  "MATLAB (Basic)",
+  "EcoStruxure & CX-Programmer (Basic)",
+  "SolidWorks (Basic)",
   "Microsoft Office & Google Workspace",
 ];
 
